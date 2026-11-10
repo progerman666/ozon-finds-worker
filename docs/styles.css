@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap');
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: #0f172a;
+    background-image: radial-gradient(circle at 15% 50%, rgba(109, 170, 69, 0.15), transparent 25%), radial-gradient(circle at 85% 30%, rgba(59, 130, 246, 0.15), transparent 25%);
+    color: #e2e8f0;
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+.container { max-width: 1000px; margin: 0 auto; padding: 60px 20px; }
+
+/* Главная */
+.hero { text-align: center; padding: 40px 0 60px; }
+.hero h1 { font-size: 48px; font-weight: 800; color: #fff; margin-bottom: 20px; letter-spacing: -1px; }
+.hero p { font-size: 20px; color: #94a3b8; max-width: 600px; margin: 0 auto 40px; }
+
+/* Сетка карточек */
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px; }
+
+/* Карточка */
+.card {
+    background: rgba(30, 41, 59, 0.7);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px -10px rgba(109, 170, 69, 0.2);
+    border-color: rgba(109, 170, 69, 0.4);
+}
+
+.card-icon { font-size: 64px; margin-bottom: 20px; }
+.card h3 { font-size: 22px; color: #fff; margin-bottom: 10px; }
+.card p { font-size: 15px; color: #94a3b8; margin-bottom: 20px; }
+
+/* Кнопки */
+.btn {
+    display: inline-block;
+    padding: 12px 28px;
+    background: #6daa45;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.2s;
+    margin-top: auto;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover { background: #588a37; transform: scale(1.02); }
+
+/* Статьи */
+.article-header { margin-bottom: 40px; }
+.article-header h1 { font-size: 36px; color: #fff; margin-bottom: 15px; }
+.back-link { display: inline-flex; align-items: center; color: #94a3b8; text-decoration: none; margin-bottom: 30px; font-weight: 500; }
+.back-link:hover { color: #fff; }
+
+.content-block {
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+    margin-bottom: 24px;
+}
+.content-block h2 { color: #6daa45; font-size: 24px; margin-bottom: 15px; }
+.content-block ul { padding-left: 20px; color: #cbd5e1; }
+.content-block li { margin-bottom: 10px; }
+.content-block strong { color: #fff; }
+
+.cta-box { text-align: center; margin-top: 40px; padding: 40px; background: rgba(109, 170, 69, 0.1); border-radius: 16px; border: 1px dashed #6daa45; }
+.cta-box h2 { color: #fff; margin-bottom: 15px; }
+.cta-box p { color: #cbd5e1; margin-bottom: 25px; }

@@ -1,0 +1,13 @@
+/**
+ * Конфигурация Wrangler для JavaScript Worker.
+ * Документация: https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+{
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "ozon-finds-worker",
+	"main": "src/index.js",
+	"compatibility_date": "2026-11-04",
+	"observability": {
+		"enabled": true
+	}
+}
