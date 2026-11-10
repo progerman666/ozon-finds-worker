@@ -20,10 +20,13 @@ body{
  font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
  color:#eaf1ff; background:#0046D6;
  background-image:
-   radial-gradient(900px 600px at 88% -12%, rgba(90,160,255,.5), transparent 60%),
-   radial-gradient(760px 600px at -5% 6%, rgba(0,20,90,.5), transparent 55%),
-   linear-gradient(160deg,#005BFF 0%, #0046D6 55%, #0033A8 100%);
- background-attachment:fixed;
+   linear-gradient(160deg, rgba(0,70,214,.80), rgba(0,40,130,.88)),
+   radial-gradient(900px 600px at 88% -12%, rgba(90,160,255,.35), transparent 60%),
+   url("img/hero-bg.jpg");
+ background-size: cover, cover, cover;
+ background-position: center, center, center;
+ background-repeat: no-repeat;
+ background-attachment: fixed;
  line-height:1.6; min-height:100vh; -webkit-font-smoothing:antialiased;
 }
 .wrap{max-width:1120px;margin:0 auto;padding:0 24px}
