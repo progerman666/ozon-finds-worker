@@ -62,7 +62,7 @@ a{color:inherit;text-decoration:none}
 .hero-art svg{display:none}
 .hero-char{width:100%;height:auto;max-height:440px;object-fit:contain;display:block;mix-blend-mode:multiply}
 .float{position:absolute;background:#fff;border:1px solid var(--line);border-radius:16px;padding:9px 12px;display:flex;align-items:center;gap:8px;box-shadow:var(--shadow);font-weight:600;font-size:14px;animation:bob 5s ease-in-out infinite}
-.float .ic{font-size:19px}
+.float .ic{width:34px;height:34px;object-fit:contain;mix-blend-mode:multiply;flex:0 0 auto;border-radius:6px}
 .float.f1{top:6%;right:0;animation-delay:0s}
 .float.f2{top:46%;left:-4%;animation-delay:1.2s}
 .float.f3{bottom:6%;right:6%;animation-delay:.6s}
@@ -217,9 +217,9 @@ a{color:inherit;text-decoration:none}
         </g>
       </svg>
       <img class="hero-char" src="img/hero-character.jpg" alt="Бегун в наушниках, смарт-часах и фитнес-браслете" width="1000" height="1000">
-      <div class="float f1"><span class="ic">🎧</span> Наушники</div>
-      <div class="float f2"><span class="ic">⌚</span> Смарт-часы</div>
-      <div class="float f3"><span class="ic">🏃</span> Браслеты</div>
+      <div class="float f1"><img class="ic" src="img/earbuds.jpg" alt="Наушники"> Наушники</div>
+      <div class="float f2"><img class="ic" src="img/smartwatch.jpg" alt="Смарт-часы"> Смарт-часы</div>
+      <div class="float f3"><img class="ic" src="img/fitness-band.jpg" alt="Браслеты"> Браслеты</div>
     </div>
   </section>
   <section id="picks" class="section">
